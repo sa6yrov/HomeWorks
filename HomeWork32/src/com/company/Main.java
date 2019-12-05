@@ -15,10 +15,13 @@ public class Main {
                 "My bitch love do cocaine, ooh\n" +
                 "I fuck a bitch, I forgot her name\n" +
                 "I can't buy a bitch no wedding ring");
+        //Task B
         FileWriter fileWriter = new FileWriter("song.txt");
         fileWriter.write(song.getTitle() + "\n" + song.getGenre() + "\n" + song.getExecutor() +"\n" + song.getLyrics());
         fileWriter.close();
-
+        
+        
+        //Task A
         FileReader fileReader = new FileReader("song.txt");
         Scanner scn = new Scanner(fileReader);
         String[] info = new String[11];
