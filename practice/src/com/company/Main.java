@@ -41,10 +41,8 @@ public class Main {
         System.out.println("Enter any name: ");
         String name = scn.nextLine();
         searchByName(name, apartmentBuilding, privateHouse);
-//
 
     }
-
     static void printSeparator() {
         System.out.println("____________________________________________________________________________________________");
     }

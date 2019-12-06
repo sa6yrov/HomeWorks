@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         Random rnd = new Random();
         FabricOfSelectables fabricOfSelectables = new FabricOfSelectables();
-        Selectable [] selectables = new Selectable[15];
+        Selectable[] selectables = new Selectable[15];
         for (int i = 0; i < selectables.length; i++) {
             selectables[i] = fabricOfSelectables.produce(rnd.nextInt(3));
         }

@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="92250f9e-4a62-4cd3-aa8c-c12aa7ecf94f" name="Default Changelist" comment="Practice" />
+    <list default="true" id="92250f9e-4a62-4cd3-aa8c-c12aa7ecf94f" name="Default Changelist" comment="Practice">
+      <change afterPath="$PROJECT_DIR$/src/com/company/FabricOfHumans.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HomeWork31/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HomeWork31/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HomeWork31/out/production/HomeWork31/FabricOfSelectables.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HomeWork31/out/production/HomeWork31/FabricOfSelectables.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HomeWork31/out/production/HomeWork31/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HomeWork31/out/production/HomeWork31/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HomeWork31/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HomeWork31/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -9,18 +17,17 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="924">
-              <caret line="42" column="60" lean-forward="true" selection-start-line="40" selection-start-column="8" selection-end-line="42" selection-end-column="60" />
+            <state relative-caret-position="1342">
+              <caret line="61" column="24" lean-forward="true" selection-start-line="61" selection-start-column="24" selection-end-line="61" selection-end-column="24" />
               <folding>
-                <marker date="1575127403677" expanded="true" signature="1845:1952" ph="..." />
+                <marker date="1575187201934" expanded="true" signature="1845:1952" ph="..." />
               </folding>
             </state>
           </provider>
@@ -38,7 +45,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/ApartmentBuilding.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="699">
+            <state relative-caret-position="858">
               <caret line="47" selection-start-line="47" selection-end-line="47" />
             </state>
           </provider>
@@ -84,7 +91,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/company/Repairable.java">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="20" lean-forward="true" selection-start-column="20" selection-end-column="20" />
+              <caret column="20" selection-start-column="20" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -112,14 +119,14 @@
         <option value="$PROJECT_DIR$/src/com/company/PrivateHouse.java" />
         <option value="$PROJECT_DIR$/src/com/company/ApartmentBuilding.java" />
         <option value="$PROJECT_DIR$/src/com/company/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/company/FabricOfHumans.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="242" />
-    <option name="y" value="39" />
-    <option name="width" value="1449" />
-    <option name="height" value="973" />
+    <option name="x" value="432" />
+    <option name="width" value="1495" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectId" id="1U6IFi7XVosRtl6U57cKWulPnGR" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -158,7 +165,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../HomeWork31" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -204,16 +211,21 @@
       <workItem from="1574947032153" duration="742000" />
       <workItem from="1575116228295" duration="708000" />
       <workItem from="1575127230276" duration="249000" />
+      <workItem from="1575127676760" duration="120000" />
+      <workItem from="1575185798496" duration="33000" />
+      <workItem from="1575185881660" duration="146000" />
+      <workItem from="1575186661589" duration="1677000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13382000" />
+    <option name="totallyTimeSpent" value="15358000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16971" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17937702" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -230,7 +242,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32997763" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.61856824" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.1689038" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50053704" side_tool="true" weight="0.19553073" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32997763" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -283,24 +295,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="Practice" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/company/Human.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/ApartmentBuilding.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="130" selection-start-line="15" selection-start-column="130" selection-end-line="15" selection-end-column="130" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/HeatingConnectable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Apartment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+        <state relative-caret-position="858">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
         </state>
       </provider>
     </entry>
@@ -311,10 +309,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Repairable.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/Human.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="20" lean-forward="true" selection-start-column="20" selection-end-column="20" />
+        <state relative-caret-position="330">
+          <caret line="15" column="130" selection-start-line="15" selection-start-column="130" selection-end-line="15" selection-end-column="130" />
         </state>
       </provider>
     </entry>
@@ -325,19 +323,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/ApartmentBuilding.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/HeatingConnectable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="699">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
+        <state relative-caret-position="44">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Repairable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="20" selection-start-column="20" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/FabricOfHumans.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Apartment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="924">
-          <caret line="42" column="60" lean-forward="true" selection-start-line="40" selection-start-column="8" selection-end-line="42" selection-end-column="60" />
+        <state relative-caret-position="1342">
+          <caret line="61" column="24" lean-forward="true" selection-start-line="61" selection-start-column="24" selection-end-line="61" selection-end-column="24" />
           <folding>
-            <marker date="1575127403677" expanded="true" signature="1845:1952" ph="..." />
+            <marker date="1575187201934" expanded="true" signature="1845:1952" ph="..." />
           </folding>
         </state>
       </provider>

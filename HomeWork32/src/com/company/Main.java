@@ -19,8 +19,12 @@ public class Main {
         FileWriter fileWriter = new FileWriter("song.txt");
         fileWriter.write(song.getTitle() + "\n" + song.getGenre() + "\n" + song.getExecutor() +"\n" + song.getLyrics());
         fileWriter.close();
+<<<<<<< Updated upstream
         
         
+=======
+
+>>>>>>> Stashed changes
         //Task A
         FileReader fileReader = new FileReader("song.txt");
         Scanner scn = new Scanner(fileReader);
