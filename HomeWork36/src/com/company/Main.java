@@ -24,7 +24,7 @@ public class Main {
             arrayList.add(i, rnd.nextInt(2));
         }
         System.out.println("Array List: \n" + arrayList);
-        System.out.println("Sorted ArrayList: ");
+        System.out.println("Sorted Array list: ");
         sort(arrayList);
 
         LinkedList<Integer> linkedList = new LinkedList<>();
