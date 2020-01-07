@@ -1,0 +1,83 @@
+create table heads(
+id serial primary key,
+full_name varchar(50) not null
+);
+
+create table countries(
+id serial primary key,
+name varchar(50) not null,
+code varchar(50) not null,
+president integer references heads(id),
+population integer not null,
+state_lang integer references state_languages(id)
+);
+
+create table cities(
+id serial primary key,
+name varchar(50) not null,
+country integer references countries(id),
+mayor integer references heads(id),
+population integer not null
+);
+
+create table peoples(
+id serial primary key,
+full_name varchar(50) not null,
+birth_date date not null
+);
+
+
+create table state_languages(
+id serial primary key,
+lang varchar(50) not null
+);
+
+insert into state_languages (lang)
+	values
+		('russian'),
+		('english');
+
+insert into heads (full_name)
+	values 
+		('Aekov Marlen'),
+		('Gujin Po'),
+		('Vladimir Plutin'),
+		('Akzybekov Beka'),
+		('Soyuzbekov Jambyldos');
+
+insert into countries (name, code, president, population, state_lang)
+	values
+		('USA', '+4312', 4, 2123, 2),
+		('Russia', '+7771', 3, 11342, 1);
+
+insert into cities (name, country, mayor, population)
+	values
+		('Karakol', 1, 1, 63),
+		('Bishkek', 1, 5, 112),
+		('Moscow', 2, 2, 123);
+
+insert into peoples (full_name, birth_date)
+	values
+		('Kulaev Maksim', '1991-03-23'),
+		('Terekova Kula', '1992-11-27'),
+		('Intechova Hura', '1989-12-12'),
+		('Kulmatova Lakira', '1995-10-13'),
+		('Urikova Beka', '1999-01-10'),
+		('Xeokova Gura', '1992-05-06'),
+		('Relova Puka', '1985-02-01'),
+		('Pulikova Zera', '1990-11-23'),
+		('Atambaeva Erika', '1988-07-17'),
+		('Zercova Mula', '1983-07-09');
+		
+select c2."name" from cities c2
+join countries cs on c2.country = cs.id
+where cs."name" like 'K%';
+
+select sum(c2.population) from cities c2
+join countries cs on c2.country = cs.id
+where cs.id = 1;
+
+select sum(c2.population) from cities c2
+join countries cs on c2.country = cs.id
+where cs.id = 2;
+
