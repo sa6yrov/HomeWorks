@@ -16,10 +16,15 @@ public class RegisterUser {
         {
             pstmt.setString(1, user.getLogin());
             pstmt.setString(2, user.getEmail());
-            pstmt.setString(3, user.getPassword());
+            pstmt.setString(3, getPassword(user));
             pstmt.executeUpdate();
         }catch (SQLException e){
             System.out.println(e.getMessage());
         }
+    }
+    public String getPassword(User user){
+        String reversePassword = new StringBuffer(user.getPassword()).reverse().toString();
+        String encryptionPassword = reversePassword + user.getPassword().charAt(user.getPassword().length()-1);
+        return encryptionPassword;
     }
 }

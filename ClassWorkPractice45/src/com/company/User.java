@@ -31,9 +31,7 @@ public class User {
     }
 
     public String getPassword() {
-        String reversePassword = new StringBuffer(password).reverse().toString();
-        String encryptionPassword = reversePassword + password.charAt(password.length()-1);
-        return encryptionPassword;
+        return password;
     }
 
     public void setPassword(String password) {
