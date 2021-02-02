@@ -1,0 +1,90 @@
+
+Задача А. Созданиие таблиц
+
+
+create table sport_type(
+id integer primary key,
+name varchar(50) not null,
+salary integer not null
+);
+
+create table trainers(
+id integer primary key,
+full_name varchar(50) not null,
+phone_number varchar(50),
+type_sport integer references sport_type(id) not null,
+inn varchar(50) not null unique
+);
+
+insert into sport_type (id, name, salary)
+	values
+		(1, 'football', 3000),
+		(2,'volleyball', 3000),
+		(3, 'basketball', 3000),
+		(4, 'tennis', 3000),
+		(5, 'chess', 3000);
+	
+insert into trainers (id, full_name, phone_number, type_sport, inn)
+	values	
+		(1, 'A. Sabyrov','+9963242332' ,1, 'Adi01'),
+		(2, 'J. Johnson','+9965234234', 1, 'John02'),
+		(3, 'Bibi Buka','+9961234123' , 2, 'Bibii03'),
+		(4, 'Lola Rahimova', '+9961237123' ,3, 'Lola04'),
+		(5, 'Denny Di', '+99612341883' ,4, 'Di05'),
+		(6, 'Stev Magmo','+9961234111223' ,5, 'Magmo06'),
+		(7, 'Kori Kery', '+996123412123',3, 'Keri07');
+	
+create table visitors(
+id serial primary key, 
+full_name varchar(50) not null,
+birth_date varchar(50) not null,
+gender varchar(4) not null
+);
+
+create table visits(
+id serial primary key,
+visitor integer references visitors(id) not null,
+visiting_time varchar(50) not null,
+trainer integer references trainers(id)
+);
+
+insert into visitors (full_name, birth_date, gender)
+	values
+		('Helik Muikn', '04/09/1996', 'Male'),
+		('Danem Hyras', '14/11/1998', 'Male'),
+		('Ikwee Olore', '24/02/1999', 'Male'),
+		('Puke Salem', '23/03/1991', 'Male');
+	
+insert into visits (visitor, visiting_time, trainer)
+	values
+		(1, '10:09 am / 24.09.2019', 1),
+		(2, '11:11 am / 25.09.2019', 3),
+		(3,'12:09 pm / 14.11.2019', 6),
+		(4, '4:09 pm / 16.10.2019', 1),
+		(3, '12:09 pm / 16.11.2019', 4),
+		(4, '4:09 pm / 18.10.2019', 7);
+
+
+
+
+Задача В. Вопросы и ответы
+1. Как вы понимаете Git?
+    Git это система контроля версий, где команда разработчиков или один разработчик могут работать над одним проектом вместе. Ответвляться
+    от основной ветки (где написан работающий код) и выполнять доработки для проекта. При каждом коммите(то есть внесение изменений), версия
+    уходит вперед, и если при каких то обстоятельствах приложение сломалось, разработчики могут откатить версию назад.
+2. Для чего нам нужны Базы Данных?
+    База данных нужна для хранения и совершения каких либо действий с данными(получить, внести, изменить данные).
+3. Что такое первичный ключ (Primary Key)?
+    Primary key нужен для того чтобы ограничить один или несколько столбцов, чтобы их значения были уникальными и не были пустыми одновременно.
+    Для того чтобы ограничить несколько столбцов нужно сделать так: Primary key(id, full_name, gender).
+4. Что такое внешний ключ (Foreign Key)?
+    Этот ключ говорит о том что к столбцу ссылаются из другой таблицы, указывать Foreign key не обязательно, так как при выполнение
+    программы ключ к столбцу присваивается автоматически.
+5. Чем отличаются колонки от строк?
+    Колонка описывает тип данных, строка это содержимое колонки
+6. Чем отличаются таблицы от базы данных?
+   Таблица хранит в себе данные, таких таблиц может быть очень много, это все называется база данных.
+7. Что такое CRUD операции?
+    CRUD - data definition language(ddl) позволяет изменять, создавать, удалять таблицы.
+
+	
