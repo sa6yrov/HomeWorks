@@ -1,0 +1,110 @@
+Задача A
+
+create table sport_type(
+id integer primary key,
+name varchar(50) not null,
+salary integer not null
+);
+
+create table trainers(
+id integer primary key,
+full_name varchar(50) not null,
+phone_number varchar(50),
+type_sport integer references sport_type(id) not null,
+inn varchar(50) not null unique
+);
+
+insert into sport_type (id, name, salary)
+	values
+		(1, 'football', 3000),
+		(2,'volleyball', 3000),
+		(3, 'basketball', 3000),
+		(4, 'tennis', 3000),
+		(5, 'chess', 3000);
+	
+insert into trainers (id, full_name, phone_number, type_sport, inn)
+	values	
+		(1, 'A. Sabyrov','+9963242332' ,1, 'Adi01'),
+		(2, 'J. Johnson','+9965234234', 1, 'John02'),
+		(3, 'Bibi Buka','+9961234123' , 2, 'Bibii03'),
+		(4, 'Lola Rahimova', '+9961237123' ,3, 'Lola04'),
+		(5, 'Denny Di', '+99612341883' ,4, 'Di05'),
+		(6, 'Stev Magmo','+9961234111223' ,5, 'Magmo06'),
+		(7, 'Kori Kery', '+996123412123',3, 'Keri07');
+	
+create table visitors(
+id serial primary key, 
+full_name varchar(50) not null,
+birth_date date not null,
+gender varchar(4) not null
+);
+
+create table visits(
+id serial primary key,
+visitor integer references visitors(id) not null,
+visiting_time timestamp not null,
+trainer integer references trainers(id)
+);
+
+insert into visitors (full_name, birth_date, gender)
+	values
+		('Helik Muikn', '1996-04-11', 'Male'),
+		('Danem Hyras', '1998-11-14', 'Male'),
+		('Ikwee Olore', '1999-02-19', 'Male'),
+		('Puke Salem', '1991-09-23', 'Male');
+	
+insert into visits (visitor, visiting_time, trainer)
+	values
+		(1, '2019-04-11 19:00:01', 1),
+		(2, '2019-04-11 16:50:20', 3),
+		(3,'2019-04-12 08:00:00 ', 6),
+		(4, '2019-04-12 10:00:02', 1),
+		(3, '2019-04-14 07:58:12', 4),
+		(4, '2019-04-16 10:01:12', 7);
+	
+	
+select vs.full_name as visitors, v2.visiting_time, trs.full_name as trainers from visits v2
+join visitors vs on v2.visitor = vs.id
+join trainers trs on v2.trainer = trs.id
+order by v2.visiting_time desc;
+------------------------------------------------------------------------------------------------
+
+Доп.Задание
+
+create table course_type(
+id serial primary key,
+title varchar(50) not null
+);
+
+insert into course_type(title)
+	values	('Java'), ('Python'), ('C#'), ('Front-End'), ('PHP');
+	
+create table courses(
+id serial primary key,
+course_title integer references course_type(id) not null,
+inn varchar (50) not null unique,
+trainer integer references trainers(id),
+start_date date  not null
+);
+
+create table trainers_it(
+id serial primary key,
+full_name varchar(50) not null,
+birth_date date not null,
+phone_number varchar(50)
+);
+
+create table administration(
+id serial primary key,
+full_name varchar(50) not null,
+birth_date date not null,
+post varchar(50),
+phone_number varchar(50)
+);
+
+create table students(
+id serial primary key,
+full_name varchar(50) not null,
+inn varchar(50) unique not null,
+my_group integer references courses(id)
+);
